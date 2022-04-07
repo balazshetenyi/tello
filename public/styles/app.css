@@ -8,19 +8,52 @@ body {
 }
 
 #wrapper {
-	width: 50%;
+	width: 40%;
+	max-width: 375px;
 	margin: 0 auto;
-	border: 1px solid red;
+	padding-top:70px;
 }
 
 .controls { 
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	align-content: space-between;
 }
 
 .control {
+	flex: 1 1 30%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	vertical-align: middle;
+	margin: 0 auto;
+	font-weight: bold;
 	border: 1px solid #F06300;
 	color: #F06300;
 	padding: 15px;
+	border-radius: 10px;
+	margin-bottom: 25px;
+}
+
+.button--filled {
+	background: #F06300;
+	color: #FFF;
+}
+
+.logo {
+	margin-top: -70px;
+	flex: 1 1 30%;
+    text-align: center;
 }
