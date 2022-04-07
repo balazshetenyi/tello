@@ -45,6 +45,7 @@ body {
 	padding: 15px;
 	border-radius: 10px;
 	margin-bottom: 25px;
+	cursor: pointer;
 }
 
 .button--filled {

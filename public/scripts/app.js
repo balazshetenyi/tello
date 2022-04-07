@@ -1,16 +1,25 @@
+$(function(){
+	
+	$(".button").on("mousedown", function(e) { 
+		
+		var command = $(e.target).attr("data-command");
+		var val = $(e.target).attr("data-value");
+		
+		console.log("command: ", command);
+		console.log("value: ", val);
+		
+		sendCommand(command, val);
 
-
-
-
-var flyBtn = document.getElementById("fly-btn");
-
-flyBtn.addEventListener("click", function(){
-    axios({
+	});
+	
+	function sendCommand(command, val) {
+		axios({
         method: 'get',
-        url: '/fly',
-        data: {
-          user: 'brunos',
-          lastName: 'ilovenodejs'
+        url: '/command',
+        params: {
+          command: command,
+          val: val
         }
       });
+	}
 });
