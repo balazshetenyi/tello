@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+}
+
+#wrapper {
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+.controls { 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.control {
+	border: 1px solid #F06300;
+	color: #F06300;
+	padding: 15px;
+}

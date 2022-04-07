@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Drone control panel</title>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <title>Super octo</title>
+		<link rel="stylesheet" href="styles/reset.css" />
+		<link rel="stylesheet" href="styles/app.css" />
     </head>
     <body>
+		<div id="wrapper">
+			<div class="controls">
+				<div class="control">Up</div>
+				<div class="control">Down</div>
+				<div class="control">Left</div>
+				<div class="control">Right</div>
+				<div class="control">Fwd flip</div>
+				<div class="control">Record</div>
+				<div class="control">Bwd flip</div>
+				<div class="control">Rotate</div>
+				<div class="control">Land</div>
+				<div class="control">Rotate</div>
+			</div>
+		</div>
+		<!--
         <h1>Super Octo control panel</h1>
 
         <button id="fly-btn">Fly</button>
@@ -23,9 +39,10 @@
 
         <button id="stream-on">Video on</button>
         <button id="stream-off">Video off</button>
+		-->
+		<script src="scripts/axios.js"></script>
+		<script src="scripts/jquery.js"></script>
+        <script src="scripts/app.js"></script>
 
-
-
-        <script src="script.js"></script>
     </body>
 </html>
