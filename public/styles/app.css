@@ -8,8 +8,8 @@ body {
 }
 
 #wrapper {
-	width: 40%;
-	max-width: 375px;
+	width: 60%;
+	max-width: 575px;
 	margin: 0 auto;
 	padding-top:70px;
 }
@@ -38,7 +38,6 @@ body {
 	justify-content: center;
 	text-align: center;
 	vertical-align: middle;
-	margin: 0 auto;
 	font-weight: bold;
 	border: 1px solid #F06300;
 	color: #F06300;
@@ -46,6 +45,11 @@ body {
 	border-radius: 10px;
 	margin-bottom: 25px;
 	cursor: pointer;
+}
+
+i {
+	font-size: 3rem;
+	font-weight: bold;
 }
 
 .button--filled {

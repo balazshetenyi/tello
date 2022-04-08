@@ -2,8 +2,8 @@ $(function(){
 	
 	$(".button").on("mousedown", function(e) { 
 		
-		var command = $(e.target).attr("data-command");
-		var val = $(e.target).attr("data-value");
+		var command = $(e.target).closest(".button").attr("data-command");
+		var val = $(e.target).closest(".button").attr("data-value");
 		
 		console.log("command: ", command);
 		console.log("value: ", val);
